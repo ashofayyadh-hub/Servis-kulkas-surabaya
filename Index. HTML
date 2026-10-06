@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Produk Terbaik - Harga Terjangkau</title>
+  <meta name="description" content="Temukan produk berkualitas dengan harga terjangkau. Hubungi kami melalui WhatsApp.">
+
+  <!-- Tampilan saat link dibagikan ke Facebook -->
+  <meta property="og:title" content="Produk Terbaik - Harga Terjangkau">
+  <meta property="og:description" content="Produk berkualitas dengan harga terjangkau.">
+  <meta property="og:type" content="website">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f2f2f2;
+      color: #222;
+    }
+
+    .box {
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 30px;
+      background: white;
+      border-radius: 15px;
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 10px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 14px 25px;
+      background: #25D366;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="box">
+    <h1>Produk/Jasa Kamu</h1>
+
+    <p>
+      Selamat datang! Kami menyediakan produk berkualitas
+      dengan harga terjangkau.
+    </p>
+
+    <h2>Kenapa memilih kami?</h2>
+
+    <p>✓ Harga terjangkau</p>
+    <p>✓ Pelayanan cepat</p>
+    <p>✓ Bisa pesan melalui WhatsApp</p>
+
+    <!-- GANTI NOMOR DI BAWAH -->
+    <a class="btn"
+       href="https://wa.me/6281235293471">
+       Hubungi WhatsApp
+    </a>
+  </div>
+
+</body>
+</html>
