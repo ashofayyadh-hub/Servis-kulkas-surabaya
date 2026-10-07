@@ -7,16 +7,16 @@
   <title>Servis Kulkas Surabaya | Kulkas, Freezer & Showcase</title>
 
   <meta name="description"
-    content="Jasa servis kulkas Surabaya untuk kulkas, freezer dan showcase. Melayani perbaikan dan panggilan ke tempat. Hubungi kami melalui WhatsApp.">
+    content="Jasa servis kulkas Surabaya. Melayani servis kulkas, freezer, showcase, isi freon, ganti kompresor dan panggilan ke rumah. Hubungi WhatsApp.">
 
   <meta name="keywords"
-    content="servis kulkas Surabaya, service kulkas Surabaya, servis freezer Surabaya, servis showcase Surabaya">
+    content="servis kulkas Surabaya, service kulkas Surabaya, servis freezer Surabaya, servis showcase Surabaya, isi freon kulkas Surabaya">
 
-  <!-- Facebook / WhatsApp -->
-  <meta property="og:title"
-    content="Servis Kulkas Surabaya">
+  <meta name="theme-color" content="#0875d1">
+
+  <meta property="og:title" content="Servis Kulkas Surabaya">
   <meta property="og:description"
-    content="Jasa servis kulkas, freezer dan showcase. Melayani panggilan ke tempat.">
+    content="Servis kulkas, freezer dan showcase. Melayani panggilan ke tempat di Surabaya.">
   <meta property="og:type" content="website">
 
   <style>
@@ -24,132 +24,343 @@
       box-sizing: border-box;
     }
 
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f2f6f8;
-      color: #222;
+    html {
+      scroll-behavior: smooth;
     }
 
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f4f8fb;
+      color: #17324d;
+    }
+
+    /* HEADER */
+    header {
+      background: white;
+      padding: 14px 6%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 12px rgba(0,0,0,.08);
+    }
+
+    .logo {
+      font-size: 21px;
+      font-weight: bold;
+      color: #0875d1;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #17324d;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #0875d1;
+    }
+
+    /* HERO */
     .hero {
-      background: #0b74c9;
+      min-height: 520px;
+      display: flex;
+      align-items: center;
+      background:
+        linear-gradient(90deg,
+        rgba(3,34,58,.95) 0%,
+        rgba(3,55,90,.78) 45%,
+        rgba(3,55,90,.20) 100%),
+        url("https://images.unsplash.com/photo-1584568694244-14fbdf83bd30?auto=format&fit=crop&w=1600&q=85")
+        center/cover;
       color: white;
-      text-align: center;
-      padding: 45px 20px;
+      padding: 70px 7%;
+    }
+
+    .hero-content {
+      max-width: 650px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #0875d1;
+      padding: 9px 17px;
+      border-radius: 30px;
+      font-weight: bold;
+      margin-bottom: 18px;
     }
 
     .hero h1 {
-      margin: 0 0 12px;
-      font-size: 32px;
+      font-size: 48px;
+      margin: 0 0 15px;
+      line-height: 1.1;
+    }
+
+    .hero h1 span {
+      color: #35a9ff;
     }
 
     .hero p {
-      font-size: 18px;
-      margin: 8px 0;
+      font-size: 20px;
+      line-height: 1.6;
+      margin: 10px 0;
     }
 
-    .container {
-      max-width: 700px;
-      margin: auto;
-      padding: 20px;
+    .hero-buttons {
+      margin-top: 28px;
     }
 
-    .card {
-      background: white;
-      padding: 25px;
-      margin: 18px 0;
-      border-radius: 15px;
-      box-shadow: 0 3px 12px rgba(0,0,0,.08);
-    }
-
-    h2 {
-      color: #0b74c9;
-    }
-
-    .layanan {
-      padding: 10px 0;
-      border-bottom: 1px solid #eee;
-    }
-
-    .layanan:last-child {
-      border-bottom: none;
-    }
-
-    .wa {
-      display: block;
+    .btn-wa {
+      display: inline-block;
       background: #25D366;
       color: white;
-      text-align: center;
-      padding: 16px;
-      border-radius: 10px;
+      padding: 16px 27px;
+      border-radius: 35px;
       text-decoration: none;
       font-size: 18px;
       font-weight: bold;
-      margin-top: 20px;
+      box-shadow: 0 5px 20px rgba(0,0,0,.2);
     }
 
+    .btn-wa:hover {
+      background: #1ebe5d;
+    }
+
+    /* CONTAINER */
+    .container {
+      max-width: 1150px;
+      margin: auto;
+      padding: 65px 20px;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .section-title h2 {
+      font-size: 32px;
+      color: #0875d1;
+      margin-bottom: 10px;
+    }
+
+    .section-title p {
+      color: #617487;
+    }
+
+    /* LAYANAN */
+    .services {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .service {
+      background: white;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 5px 20px rgba(0,0,0,.08);
+      transition: .3s;
+    }
+
+    .service:hover {
+      transform: translateY(-5px);
+    }
+
+    .service img {
+      width: 100%;
+      height: 190px;
+      object-fit: cover;
+    }
+
+    .service-content {
+      padding: 22px;
+    }
+
+    .service h3 {
+      margin-top: 0;
+      color: #0875d1;
+    }
+
+    .service p {
+      color: #617487;
+      line-height: 1.6;
+    }
+
+    /* KEUNGGULAN */
+    .about {
+      background: white;
+    }
+
+    .about-box {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 45px;
+      align-items: center;
+    }
+
+    .about img {
+      width: 100%;
+      border-radius: 20px;
+      box-shadow: 0 8px 25px rgba(0,0,0,.12);
+    }
+
+    .about h2 {
+      color: #0875d1;
+      font-size: 32px;
+    }
+
+    .feature {
+      display: flex;
+      gap: 15px;
+      margin: 20px 0;
+      align-items: center;
+    }
+
+    .feature-icon {
+      min-width: 48px;
+      height: 48px;
+      background: #0875d1;
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+    }
+
+    /* GALERI */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 15px;
+    }
+
+    /* AREA */
+    .area {
+      background: #0875d1;
+      color: white;
+      text-align: center;
+    }
+
+    .area h2 {
+      font-size: 32px;
+      margin-top: 0;
+    }
+
+    .area-list {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 25px;
+    }
+
+    .area-list span {
+      background: rgba(255,255,255,.15);
+      padding: 12px 20px;
+      border-radius: 25px;
+    }
+
+    /* CTA */
+    .cta {
+      background: #052e4d;
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .cta h2 {
+      font-size: 32px;
+      margin-top: 0;
+    }
+
+    /* FOOTER */
     footer {
+      background: #031d31;
+      color: #b7c7d3;
       text-align: center;
       padding: 25px;
-      color: #666;
+    }
+
+    /* FLOATING WA */
+    .floating-wa {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      background: #25D366;
+      color: white;
+      padding: 14px 20px;
+      border-radius: 35px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 5px 20px rgba(0,0,0,.25);
+      z-index: 2000;
+    }
+
+    /* MOBILE */
+    @media (max-width: 800px) {
+
+      header {
+        padding: 13px 18px;
+      }
+
+      nav {
+        display: none;
+      }
+
+      .hero {
+        min-height: 580px;
+        padding: 55px 22px;
+      }
+
+      .hero h1 {
+        font-size: 38px;
+      }
+
+      .hero p {
+        font-size: 17px;
+      }
+
+      .services {
+        grid-template-columns: 1fr;
+      }
+
+      .about-box {
+        grid-template-columns: 1fr;
+      }
+
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+
+      .gallery img {
+        height: 230px;
+      }
+
+      .section-title h2 {
+        font-size: 27px;
+      }
+
+      .floating-wa {
+        right: 15px;
+        bottom: 15px;
+        font-size: 14px;
+      }
     }
   </style>
 </head>
 
-<body>
-
-  <section class="hero">
-    <h1>Servis Kulkas Surabaya</h1>
-    <p>Kulkas • Freezer • Showcase</p>
-    <p>Melayani panggilan ke tempat</p>
-  </section>
-
-  <div class="container">
-
-    <div class="card">
-      <h2>🔧 Jasa Servis Kulkas</h2>
-
-      <div class="layanan">✓ Servis kulkas</div>
-      <div class="layanan">✓ Servis freezer</div>
-      <div class="layanan">✓ Servis showcase</div>
-      <div class="layanan">✓ Pemeriksaan kerusakan</div>
-      <div class="layanan">✓ Panggilan ke tempat</div>
-
-      <!-- GANTI NOMOR INI -->
-      <a class="wa"
-         href="https://wa.me/6281235293471">
-         💬 Hubungi WhatsApp
-      </a>
-    </div>
-
-    <div class="card">
-      <h2>📍 Area Layanan</h2>
-
-      <p>
-        Melayani servis kulkas di wilayah Surabaya
-        dan sekitarnya.
-      </p>
-
-      <p>
-        Hubungi kami untuk menanyakan ketersediaan
-        layanan dan jadwal kunjungan.
-      </p>
-    </div>
-
-    <div class="card">
-      <h2>⭐ Kenapa Memilih Kami?</h2>
-
-      <p>✓ Bisa panggilan ke tempat</p>
-      <p>✓ Melayani kulkas, freezer & showcase</p>
-      <p>✓ Konsultasi kerusakan</p>
-      <p>✓ Hubungi langsung melalui WhatsApp</p>
-    </div>
-
-  </div>
-
-  <footer>
-    © 2026 Servis Kulkas Surabaya
-  </footer>
-
-</body>
-</html>
+<body
