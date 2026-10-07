@@ -1,624 +1,386 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Servis Kulkas Surabaya | Kulkas, Freezer & Showcase</title>
+<title>Servis Kulkas Surabaya</title>
 
-  <meta name="description"
-    content="Jasa servis kulkas Surabaya. Melayani servis kulkas, freezer, showcase, isi freon, ganti kompresor dan panggilan ke rumah. Hubungi WhatsApp.">
+<meta name="description"
+content="Servis kulkas Surabaya, freezer dan showcase. Melayani panggilan ke rumah. Hubungi WhatsApp.">
 
-  <meta name="keywords"
-    content="servis kulkas Surabaya, service kulkas Surabaya, servis freezer Surabaya, servis showcase Surabaya, isi freon kulkas Surabaya">
+<style>
+*{
+  box-sizing:border-box;
+}
 
-  <meta name="theme-color" content="#0875d1">
+body{
+  margin:0;
+  font-family:Arial,sans-serif;
+  background:#f1f7fc;
+  color:#17324d;
+}
 
-  <meta property="og:title" content="Servis Kulkas Surabaya">
-  <meta property="og:description"
-    content="Servis kulkas, freezer dan showcase. Melayani panggilan ke tempat di Surabaya.">
-  <meta property="og:type" content="website">
+header{
+  background:#0875d1;
+  color:white;
+  padding:18px 20px;
+  text-align:center;
+}
 
-  <style>
-    * {
-      box-sizing: border-box;
-    }
+.logo{
+  font-size:24px;
+  font-weight:bold;
+}
 
-    html {
-      scroll-behavior: smooth;
-    }
+.hero{
+  background:linear-gradient(135deg,#063b63,#0787e3);
+  color:white;
+  padding:65px 20px;
+  text-align:center;
+}
 
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: #f4f8fb;
-      color: #17324d;
-    }
+.hero .icon{
+  font-size:75px;
+  margin-bottom:15px;
+}
 
-    /* HEADER */
-    header {
-      background: white;
-      padding: 14px 6%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      box-shadow: 0 2px 12px rgba(0,0,0,.08);
-    }
+.hero h1{
+  font-size:42px;
+  margin:5px 0 15px;
+}
 
-    .logo {
-      font-size: 21px;
-      font-weight: bold;
-      color: #0875d1;
-    }
+.hero h1 span{
+  color:#54c7ff;
+}
 
-    nav a {
-      margin-left: 20px;
-      text-decoration: none;
-      color: #17324d;
-      font-weight: bold;
-      font-size: 14px;
-    }
+.hero p{
+  font-size:18px;
+  line-height:1.6;
+  max-width:650px;
+  margin:10px auto;
+}
 
-    nav a:hover {
-      color: #0875d1;
-    }
+.wa{
+  display:inline-block;
+  background:#25d366;
+  color:white;
+  text-decoration:none;
+  padding:16px 28px;
+  border-radius:35px;
+  font-weight:bold;
+  font-size:18px;
+  margin-top:20px;
+}
 
-    /* HERO */
-    .hero {
-      min-height: 520px;
-      display: flex;
-      align-items: center;
-      background:
-        linear-gradient(90deg,
-        rgba(3,34,58,.95) 0%,
-        rgba(3,55,90,.78) 45%,
-        rgba(3,55,90,.20) 100%),
-        url("https://images.unsplash.com/photo-1584568694244-14fbdf83bd30?auto=format&fit=crop&w=1600&q=85")
-        center/cover;
-      color: white;
-      padding: 70px 7%;
-    }
+.container{
+  max-width:1100px;
+  margin:auto;
+  padding:50px 20px;
+}
 
-    .hero-content {
-      max-width: 650px;
-    }
+.title{
+  text-align:center;
+  margin-bottom:35px;
+}
 
-    .badge {
-      display: inline-block;
-      background: #0875d1;
-      padding: 9px 17px;
-      border-radius: 30px;
-      font-weight: bold;
-      margin-bottom: 18px;
-    }
+.title h2{
+  color:#0875d1;
+  font-size:30px;
+  margin-bottom:8px;
+}
 
-    .hero h1 {
-      font-size: 48px;
-      margin: 0 0 15px;
-      line-height: 1.1;
-    }
+.cards{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
 
-    .hero h1 span {
-      color: #35a9ff;
-    }
+.card{
+  background:white;
+  padding:30px 20px;
+  border-radius:18px;
+  text-align:center;
+  box-shadow:0 5px 18px rgba(0,0,0,.08);
+}
 
-    .hero p {
-      font-size: 20px;
-      line-height: 1.6;
-      margin: 10px 0;
-    }
+.card .emoji{
+  font-size:55px;
+}
 
-    .hero-buttons {
-      margin-top: 28px;
-    }
+.card h3{
+  color:#0875d1;
+}
 
-    .btn-wa {
-      display: inline-block;
-      background: #25D366;
-      color: white;
-      padding: 16px 27px;
-      border-radius: 35px;
-      text-decoration: none;
-      font-size: 18px;
-      font-weight: bold;
-      box-shadow: 0 5px 20px rgba(0,0,0,.2);
-    }
+.card p{
+  line-height:1.6;
+  color:#667788;
+}
 
-    .btn-wa:hover {
-      background: #1ebe5d;
-    }
+.about{
+  background:white;
+}
 
-    /* CONTAINER */
-    .container {
-      max-width: 1150px;
-      margin: auto;
-      padding: 65px 20px;
-    }
+.about-box{
+  max-width:800px;
+  margin:auto;
+  text-align:center;
+}
 
-    .section-title {
-      text-align: center;
-      margin-bottom: 40px;
-    }
+.about-box h2{
+  color:#0875d1;
+}
 
-    .section-title h2 {
-      font-size: 32px;
-      color: #0875d1;
-      margin-bottom: 10px;
-    }
+.features{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:15px;
+  margin-top:25px;
+}
 
-    .section-title p {
-      color: #617487;
-    }
+.feature{
+  background:#f1f7fc;
+  padding:18px;
+  border-radius:12px;
+  text-align:left;
+}
 
-    /* LAYANAN */
-    .services {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 22px;
-    }
+.area{
+  background:#0875d1;
+  color:white;
+  text-align:center;
+}
 
-    .service {
-      background: white;
-      border-radius: 18px;
-      overflow: hidden;
-      box-shadow: 0 5px 20px rgba(0,0,0,.08);
-      transition: .3s;
-    }
+.area h2{
+  font-size:30px;
+}
 
-    .service:hover {
-      transform: translateY(-5px);
-    }
+.area-list{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-top:25px;
+}
 
-    .service img {
-      width: 100%;
-      height: 190px;
-      object-fit: cover;
-    }
+.area-list span{
+  background:white;
+  color:#0875d1;
+  padding:10px 16px;
+  border-radius:25px;
+}
 
-    .service-content {
-      padding: 22px;
-    }
+.contact{
+  text-align:center;
+  background:#052f4d;
+  color:white;
+  padding:55px 20px;
+}
 
-    .service h3 {
-      margin-top: 0;
-      color: #0875d1;
-    }
+.contact h2{
+  font-size:30px;
+}
 
-    .service p {
-      color: #617487;
-      line-height: 1.6;
-    }
+footer{
+  background:#021c2d;
+  color:#aebdca;
+  text-align:center;
+  padding:25px 15px;
+}
 
-    /* KEUNGGULAN */
-    .about {
-      background: white;
-    }
+.floating{
+  position:fixed;
+  right:18px;
+  bottom:18px;
+  background:#25d366;
+  color:white;
+  text-decoration:none;
+  padding:14px 20px;
+  border-radius:30px;
+  font-weight:bold;
+  box-shadow:0 4px 15px #555;
+}
 
-    .about-box {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 45px;
-      align-items: center;
-    }
+@media(max-width:700px){
 
-    .about img {
-      width: 100%;
-      border-radius: 20px;
-      box-shadow: 0 8px 25px rgba(0,0,0,.12);
-    }
+  .hero h1{
+    font-size:34px;
+  }
 
-    .about h2 {
-      color: #0875d1;
-      font-size: 32px;
-    }
+  .cards{
+    grid-template-columns:1fr;
+  }
 
-    .feature {
-      display: flex;
-      gap: 15px;
-      margin: 20px 0;
-      align-items: center;
-    }
+  .features{
+    grid-template-columns:1fr;
+  }
 
-    .feature-icon {
-      min-width: 48px;
-      height: 48px;
-      background: #0875d1;
-      color: white;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 22px;
-    }
-
-    /* GALERI */
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 15px;
-    }
-
-    .gallery img {
-      width: 100%;
-      height: 220px;
-      object-fit: cover;
-      border-radius: 15px;
-    }
-
-    /* AREA */
-    .area {
-      background: #0875d1;
-      color: white;
-      text-align: center;
-    }
-
-    .area h2 {
-      font-size: 32px;
-      margin-top: 0;
-    }
-
-    .area-list {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-top: 25px;
-    }
-
-    .area-list span {
-      background: rgba(255,255,255,.15);
-      padding: 12px 20px;
-      border-radius: 25px;
-    }
-
-    /* CTA */
-    .cta {
-      background: #052e4d;
-      color: white;
-      text-align: center;
-      padding: 60px 20px;
-    }
-
-    .cta h2 {
-      font-size: 32px;
-      margin-top: 0;
-    }
-
-    /* FOOTER */
-    footer {
-      background: #031d31;
-      color: #b7c7d3;
-      text-align: center;
-      padding: 25px;
-    }
-
-    /* FLOATING WA */
-    .floating-wa {
-      position: fixed;
-      right: 20px;
-      bottom: 20px;
-      background: #25D366;
-      color: white;
-      padding: 14px 20px;
-      border-radius: 35px;
-      text-decoration: none;
-      font-weight: bold;
-      box-shadow: 0 5px 20px rgba(0,0,0,.25);
-      z-index: 2000;
-    }
-
-    /* MOBILE */
-    @media (max-width: 800px) {
-
-      header {
-        padding: 13px 18px;
-      }
-
-      nav {
-        display: none;
-      }
-
-      .hero {
-        min-height: 580px;
-        padding: 55px 22px;
-      }
-
-      .hero h1 {
-        font-size: 38px;
-      }
-
-      .hero p {
-        font-size: 17px;
-      }
-
-      .services {
-        grid-template-columns: 1fr;
-      }
-
-      .about-box {
-        grid-template-columns: 1fr;
-      }
-
-      .gallery {
-        grid-template-columns: 1fr;
-      }
-
-      .gallery img {
-        height: 230px;
-      }
-
-      .section-title h2 {
-        font-size: 27px;
-      }
-
-      .floating-wa {
-        right: 15px;
-        bottom: 15px;
-        font-size: 14px;
-      }
-    }
-  </style>
+  .floating{
+    right:12px;
+    bottom:12px;
+  }
+}
+</style>
 </head>
 
 <body>
 
 <header>
   <div class="logo">❄️ Servis Kulkas Surabaya</div>
-
-  <nav>
-    <a href="#layanan">Layanan</a>
-    <a href="#tentang">Tentang</a>
-    <a href="#galeri">Galeri</a>
-    <a href="#area">Area</a>
-    <a href="#kontak">Kontak</a>
-  </nav>
 </header>
 
-
-<!-- HERO -->
 <section class="hero">
 
-  <div class="hero-content">
+  <div class="icon">🧊🔧</div>
 
-    <div class="badge">
-      Profesional • Cepat • Berpengalaman
-    </div>
-
-    <h1>
-      Servis Kulkas<br>
-      <span>Surabaya</span>
-    </h1>
-
-    <p>
-      Solusi untuk kulkas tidak dingin, freezer bermasalah,
-      showcase rusak dan berbagai kerusakan lainnya.
-    </p>
-
-    <p>
-      🔧 Melayani panggilan ke rumah di Surabaya dan sekitarnya.
-    </p>
-
-    <div class="hero-buttons">
-      <a class="btn-wa"
-         href="https://wa.me/6281235293471?text=Halo%20saya%20ingin%20servis%20kulkas">
-        💬 Hubungi WhatsApp
-      </a>
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- LAYANAN -->
-<section id="layanan">
-
-  <div class="container">
-
-    <div class="section-title">
-      <h2>Layanan Kami</h2>
-      <p>Melayani berbagai kebutuhan perbaikan kulkas</p>
-    </div>
-
-    <div class="services">
-
-      <div class="service">
-        <img
-          src="https://images.unsplash.com/photo-1584568694244-14fbdf83bd30?auto=format&fit=crop&w=800&q=80"
-          alt="Servis kulkas">
-        <div class="service-content">
-          <h3>🧊 Servis Kulkas</h3>
-          <p>
-            Perbaikan kulkas tidak dingin, kurang dingin,
-            bocor dan berbagai masalah lainnya.
-          </p>
-        </div>
-      </div>
-
-      <div class="service">
-        <img
-          src="https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?auto=format&fit=crop&w=800&q=80"
-          alt="Servis freezer">
-        <div class="service-content">
-          <h3>❄️ Servis Freezer</h3>
-          <p>
-            Menangani freezer tidak dingin, bunga es,
-            kompresor dan masalah pendinginan.
-          </p>
-        </div>
-      </div>
-
-      <div class="service">
-        <img
-          src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=800&q=80"
-          alt="Servis showcase">
-        <div class="service-content">
-          <h3>🏪 Servis Showcase</h3>
-          <p>
-            Perbaikan showcase untuk toko, usaha,
-            restoran dan kebutuhan lainnya.
-          </p>
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- TENTANG -->
-<section id="tentang" class="about">
-
-  <div class="container">
-
-    <div class="about-box">
-
-      <div>
-        <img
-          src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=1000&q=85"
-          alt="Teknisi servis kulkas">
-      </div>
-
-      <div>
-
-        <h2>Kenapa Memilih Kami?</h2>
-
-        <p>
-          Kami melayani servis kulkas dengan mengutamakan
-          pelayanan yang cepat dan komunikasi yang jelas.
-        </p>
-
-        <div class="feature">
-          <div class="feature-icon">🔧</div>
-          <div>
-            <b>Teknisi Berpengalaman</b><br>
-            Menangani berbagai jenis kerusakan.
-          </div>
-        </div>
-
-        <div class="feature">
-          <div class="feature-icon">🚗</div>
-          <div>
-            <b>Bisa Panggilan</b><br>
-            Teknisi datang ke lokasi pelanggan.
-          </div>
-        </div>
-
-        <div class="feature">
-          <div class="feature-icon">⚡</div>
-          <div>
-            <b>Respon Cepat</b><br>
-            Hubungi kami melalui WhatsApp.
-          </div>
-        </div>
-
-        <div class="feature">
-          <div class="feature-icon">💰</div>
-          <div>
-            <b>Harga Transparan</b><br>
-            Konsultasikan kerusakan terlebih dahulu.
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- GALERI -->
-<section id="galeri">
-
-  <div class="container">
-
-    <div class="section-title">
-      <h2>Galeri Layanan</h2>
-      <p>Contoh aktivitas servis dan perbaikan</p>
-    </div>
-
-    <div class="gallery">
-
-      <img
-        src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=800&q=80"
-        alt="Teknisi bekerja">
-
-      <img
-        src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&fit=crop&w=800&q=80"
-        alt="Peralatan teknisi">
-
-      <img
-        src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=800&q=80"
-        alt="Teknisi perbaikan">
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- AREA -->
-<section id="area" class="area">
-
-  <div class="container">
-
-    <h2>📍 Area Layanan</h2>
-
-    <p>
-      Melayani panggilan servis kulkas di Surabaya
-      dan wilayah sekitarnya.
-    </p>
-
-    <div class="area-list">
-
-      <span>Surabaya Pusat</span>
-      <span>Surabaya Barat</span>
-      <span>Surabaya Timur</span>
-      <span>Surabaya Selatan</span>
-      <span>Surabaya Utara</span>
-      <span>Sidoarjo</span>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- CTA -->
-<section id="kontak" class="cta">
-
-  <h2>Butuh Servis Kulkas?</h2>
+  <h1>
+    Servis Kulkas<br>
+    <span>Surabaya</span>
+  </h1>
 
   <p>
-    Jangan tunggu kulkas semakin bermasalah.
-    Konsultasikan kerusakan melalui WhatsApp.
+    Solusi untuk kulkas tidak dingin,
+    freezer bermasalah dan showcase rusak.
   </p>
 
-  <br>
+  <p>
+    📍 Melayani panggilan ke tempat
+  </p>
 
-  <a class="btn-wa"
-     href="https://wa.me/6281235293471?text=Halo%20saya%20ingin%20konsultasi%20servis%20kulkas">
-    💬 Chat WhatsApp Sekarang
+  <a class="wa"
+  href="https://wa.me/6281235293471?text=Halo%20saya%20ingin%20servis%20kulkas">
+  💬 Hubungi WhatsApp
   </a>
 
 </section>
 
+<section>
+<div class="container">
+
+  <div class="title">
+    <h2>🔧 Layanan Kami</h2>
+    <p>Melayani berbagai kebutuhan servis pendingin</p>
+  </div>
+
+  <div class="cards">
+
+    <div class="card">
+      <div class="emoji">🧊</div>
+      <h3>Servis Kulkas</h3>
+      <p>
+        Menangani kulkas tidak dingin,
+        kurang dingin, bocor dan masalah lainnya.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="emoji">❄️</div>
+      <h3>Servis Freezer</h3>
+      <p>
+        Perbaikan freezer tidak dingin,
+        bunga es dan masalah pendinginan.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="emoji">🏪</div>
+      <h3>Servis Showcase</h3>
+      <p>
+        Melayani perbaikan showcase
+        untuk toko dan kebutuhan usaha.
+      </p>
+    </div>
+
+  </div>
+
+</div>
+</section>
+
+<section class="about">
+<div class="container">
+
+  <div class="about-box">
+
+    <h2>⭐ Kenapa Memilih Kami?</h2>
+
+    <p>
+      Kami melayani servis kulkas dengan
+      komunikasi yang jelas dan pelayanan yang cepat.
+    </p>
+
+    <div class="features">
+
+      <div class="feature">
+        🔧 <b>Teknisi Berpengalaman</b><br>
+        Menangani berbagai jenis kerusakan.
+      </div>
+
+      <div class="feature">
+        🚗 <b>Bisa Panggilan</b><br>
+        Teknisi datang ke lokasi pelanggan.
+      </div>
+
+      <div class="feature">
+        ⚡ <b>Respon Cepat</b><br>
+        Hubungi langsung melalui WhatsApp.
+      </div>
+
+      <div class="feature">
+        💰 <b>Harga Transparan</b><br>
+        Konsultasikan kerusakan terlebih dahulu.
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+</section>
+
+<section class="area">
+
+<div class="container">
+
+  <h2>📍 Area Layanan</h2>
+
+  <p>
+    Melayani Surabaya dan wilayah sekitarnya.
+  </p>
+
+  <div class="area-list">
+    <span>Surabaya Pusat</span>
+    <span>Surabaya Barat</span>
+    <span>Surabaya Timur</span>
+    <span>Surabaya Selatan</span>
+    <span>Surabaya Utara</span>
+    <span>Sidoarjo</span>
+  </div>
+
+</div>
+
+</section>
+
+<section class="contact">
+
+  <h2>Butuh Servis Kulkas?</h2>
+
+  <p>
+    Konsultasikan masalah kulkas Anda melalui WhatsApp.
+  </p>
+
+  <a class="wa"
+  href="https://wa.me/6281235293471?text=Halo%20saya%20ingin%20konsultasi%20servis%20kulkas">
+  💬 Chat WhatsApp
+  </a>
+
+</section>
 
 <footer>
 
   <b>❄️ Servis Kulkas Surabaya</b>
 
   <p>
-    Solusi servis kulkas, freezer & showcase
+    Kulkas • Freezer • Showcase
   </p>
 
   <p>
@@ -627,12 +389,9 @@
 
 </footer>
 
-
-<!-- FLOATING WHATSAPP -->
-<a
-  class="floating-wa"
-  href="https://wa.me/6281235293471?text=Halo%20saya%20ingin%20servis%20kulkas">
-  💬 WhatsApp
+<a class="floating"
+href="https://wa.me/6281235293471?text=Halo%20saya%20ingin%20servis%20kulkas">
+💬 WhatsApp
 </a>
 
 </body>
